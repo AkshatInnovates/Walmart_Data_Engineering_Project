@@ -28,45 +28,7 @@ Ghost Agentic DB
 AWS S3
    │
    └── Cloud Storage / Data Lake
-# Medallion Architecture
-Bronze → Raw ingested data
-Silver → Technical + business transformations
-Gold → Facts and dimensions for analytics
-# Tech Stack
-Databricks & Apache Spark — Data processing
-dbt — SQL transformations, testing & snapshots
-Apache Airflow — Pipeline orchestration
-Ghost Agentic Database — Source database
-AWS S3 — Cloud storage / data lake
-Docker — Containerized Airflow environment
-Python & SQL — Development and transformations
-Git & GitHub — Version control
-# Pipeline
-Source DB
-   ↓
-CDC / Incremental Ingestion
-   ↓
-Databricks + Spark
-   ↓
-Bronze
-   ↓
-dbt
-   ↓
-Silver
-   ↓
-dbt
-   ↓
-Gold
-# Key Features
-End-to-end data pipeline
-CDC / incremental data processing
-Medallion architecture
-dbt transformations and data quality tests
-dbt snapshots for historical tracking
-Airflow orchestration
-Databricks + Spark processing
-AWS S3 cloud storage
-Dockerized development environment
+
 Author
 
 Akshat Jain
